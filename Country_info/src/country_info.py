@@ -2,6 +2,19 @@ import requests
 
 
 def county_info(country_name : str)->str:
+    """
+    Fetches information about a country using the REST Countries API.
+
+    Parameters:
+        country_name (str): The name of the country to fetch info for.
+
+    Returns:
+        dict: A dictionary containing capital, region, flag URL,
+              languages, population, and currencies.
+
+    Example:
+        county_info("Germany")
+    """
     
     url=f"https://restcountries.com/v3.1/name/{country_name}"
     response=requests.get(url)
