@@ -8,7 +8,7 @@ def calculate_BMI(weight,height):
 def condition_BMI():
     if calculate_BMI(weight,height)<18:
         return "Low weight!"
-    elif 18<calculate_BMI(weight,height)<25:
+    elif 18<=calculate_BMI(weight,height)<=25:
         return "Normal weight"
     else:
         return "Over weight"
